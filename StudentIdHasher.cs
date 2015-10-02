@@ -27,7 +27,7 @@ namespace HashStudentIDSample
         {
             // Use SHA1 to generate a hash key from the passphrase
             SHA1 sha = new SHA1CryptoServiceProvider();
-            byte[] pfb = s_UTF8NoByteOrderMark.GetBytes(passPhrase);
+            byte[] pfb = s_UTF8NoByteOrderMark.GetBytes(passPhrase.Trim());
             m_hashKey = sha.ComputeHash(pfb);
         }
 
