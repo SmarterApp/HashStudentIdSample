@@ -35,7 +35,7 @@ namespace HashStudentIDSample
         {
             // Use HMAC to calculate the hash
             HMACSHA1 hmac = new HMACSHA1(m_hashKey);
-            byte[] bid = s_UTF8NoByteOrderMark.GetBytes(studentId);
+            byte[] bid = s_UTF8NoByteOrderMark.GetBytes(studentId.Trim());
             byte[] hash = hmac.ComputeHash(bid);
             return ByteArrayToHexString(hash);
         }
