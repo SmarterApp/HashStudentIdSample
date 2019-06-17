@@ -1,5 +1,5 @@
 # Hash StudentID Sample
-Sample code to demonstrate how to hash a StudentID into an an AlternateSSID suitable for use in de-identified student data.
+Sample code to demonstrate how to hash a StudentID into an AlternateSSID suitable for use in de-identified student data.
 
 There are fewer than 50 functional lines of code. This is very easy to incorporate into a larger system.
 
